@@ -1,0 +1,10 @@
+@media only screen and (max-width: 992px) {
+  #page-title {
+    text-align: center;
+  }
+
+  #average-grade-container {
+    display: flex;
+    justify-content: center;
+  }
+}
