@@ -75,7 +75,10 @@ Try the application live on [my porftolio website](https://www.keith-tachibana.c
   }
   ```
    - Save your changes (`Ctrl + O`) and exit (`Ctrl + X`)
-  
+   - Link your default site to the sites-enabled directory (if not already done):
+  ```shell
+  sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+  ```
 9. Start nginx
   ```shell
   sudo service nginx start
