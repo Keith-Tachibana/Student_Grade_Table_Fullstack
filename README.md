@@ -1,5 +1,5 @@
 # Student Grade Table
-A CRUD (Create, Read, Update, Delete), full-stack web application to create, read, update, and delete student grades
+A simple CRUD (Create, Read, Update, Delete), full-stack web application to create, read, update, and delete student grades
 ## Technologies Used
 - -React.js 16.13.0
 - -ReactDOM 16.13.0
