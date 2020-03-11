@@ -8,6 +8,7 @@ A simple CRUD (Create, Read, Update, Delete), full-stack web application to crea
 - -Bootstrap 4.4.1
 - -FontAwesome 5.11.2
 - -Node 10.15.3
+- -npm 6.4.1
 - -CORS 2.8.5
 - -Express 4.17.1
 - -pg 7.18.2
