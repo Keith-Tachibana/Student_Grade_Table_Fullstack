@@ -71,6 +71,8 @@ Try the application live on [my porftolio website](https://www.keith-tachibana.c
     proxy_pass http://127.0.0.1:3000;
   }
   ```
+  Save your changes and exit: `Ctrl+O` then `Ctrl+X`
+  
 9. Start nginx
   ```shell
   sudo service nginx start
