@@ -11,8 +11,8 @@ A simple CRUD (Create, Read, Update, Delete), full-stack web application to crea
 - -CORS 2.8.5
 - -Express 4.17.1
 - -pg 7.18.2
-- -@Babel/core 7.8.7
-- -@Babel/plugin-transform-react-jsx 7.8.3
+- -@babel/core 7.8.7
+- -@babel/plugin-transform-react-jsx 7.8.3
 - -Babel-Loader 8.0.6
 - -pm2 4.2.3
 - -PostgreSQL 10.10
