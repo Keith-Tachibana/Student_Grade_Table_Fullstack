@@ -65,13 +65,13 @@ Try the application live on [my porftolio website](https://www.keith-tachibana.c
   cd /etc/nginx/sites-available
   sudo nano default
   ```
-..1. In the "server" code block, add this underneath the first location definition:
+  1. In the "server" code block, add this underneath the first location definition:
   ```shell
   location /api {
     proxy_pass http://127.0.0.1:3000;
   }
   ```
-..2. Save your changes (`Ctrl + O`) and exit (`Ctrl + X`)
+  2. Save your changes (`Ctrl + O`) and exit (`Ctrl + X`)
   
 9. Start nginx
   ```shell
