@@ -1,2 +1,4 @@
-# SGT_Fullstack
-A project that uses React.js for the front-end and Nodes.js/Express.js/PostgreSQL for the back-end to pass student grade information back and forth
+# Student Grade Table
+A CRUD (Create, Read, Update, Delete) full-stack web application to create, read, update, and delete student grades
+## Preview
+![Student Grade Table Preview](preview.gif "Student Grade Table Preview")
