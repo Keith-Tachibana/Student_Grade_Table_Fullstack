@@ -4,6 +4,7 @@ A simple CRUD (Create, Read, Update, Delete), full-stack web application to crea
 - -React.js 16.13.0
 - -ReactDOM 16.13.0
 - -Webpack 4.42.0
+- -Webpack-CLI 3.3.11
 - -Bootstrap 4.4.1
 - -FontAwesome 5.11.2
 - -Node.js 10.15.3
