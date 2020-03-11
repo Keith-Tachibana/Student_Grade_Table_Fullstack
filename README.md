@@ -2,7 +2,7 @@
 A CRUD (Create, Read, Update, Delete), full-stack web application to create, read, update, and delete student grades
 ## Technologies Used
 - -React.js 16.13.0
-- -React-DOM 16.13.0
+- -ReactDOM 16.13.0
 - -Webpack 4.42.0
 - -Bootstrap 4
 - -Node.js 10.15.3
