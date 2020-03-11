@@ -4,15 +4,17 @@ A simple CRUD (Create, Read, Update, Delete), full-stack web application to crea
 - -React.js 16.13.0
 - -ReactDOM 16.13.0
 - -Webpack 4.42.0
-- -Bootstrap 4
+- -Bootstrap 4.4.1
+- -FontAwesome 5.11.2
 - -Node.js 10.15.3
 - -CORS 2.8.5
 - -Express 4.17.1
 - -pg 7.18.2
-- -Babel 7.8.7
-- -Babel Loader 8.0.6
+- -@Babel/core 7.8.7
+- -@Babel/plugin-transform-react-jsx 7.8.3
+- -Babel-Loader 8.0.6
 - -pm2 4.2.3
-- -PostgreSQL 10
+- -PostgreSQL 10.10
 - -nginx 1.14.0
 ## Live Demo
 Try the application live on [my porftolio website](https://www.keith-tachibana.com/portfolio/studentGradeTable/index.html)
