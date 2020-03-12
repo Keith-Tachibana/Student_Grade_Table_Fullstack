@@ -1,23 +1,23 @@
 # Student Grade Table
 A simple CRUD (Create, Read, Update, Delete), full-stack web application to create, read, update, and delete student grades
 ## Technologies Used
+- -@Babel/Core 7.8.7
+- -@Babel/Plugin-Transform-React-JSX 7.8.3
+- -Babel-Loader 8.0.6
+- -Bootstrap 4.4.1
+- -CORS 2.8.5
+- -Express 4.17.1
+- -FontAwesome 5.11.2
+- -Nginx 1.14.0
+- -Node 10.15.3
+- -NPM 6.4.1
+- -PG 7.18.2
+- -PM2 4.2.3
+- -PostgreSQL 10.10
 - -React 16.13.0
 - -ReactDOM 16.13.0
 - -Webpack 4.42.0
-- -Webpack-CLI 3.3.11
-- -Bootstrap 4.4.1
-- -FontAwesome 5.11.2
-- -Node 10.15.3
-- -npm 6.4.1
-- -CORS 2.8.5
-- -Express 4.17.1
-- -pg 7.18.2
-- -@babel/core 7.8.7
-- -@babel/plugin-transform-react-jsx 7.8.3
-- -Babel-Loader 8.0.6
-- -pm2 4.2.3
-- -PostgreSQL 10.10
-- -nginx 1.14.0
+- -Webpack CLI 3.3.11
 ## Live Demo
 Try the application live on [my porftolio website](https://www.keith-tachibana.com/portfolio/studentGradeTable/index.html)
 ## Features
