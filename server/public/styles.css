@@ -1,3 +1,19 @@
+body {
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  input::placeholder {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  input::placeholder {
+    font-size: 0.75rem;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   #page-title {
     text-align: center;
@@ -7,4 +23,59 @@
     display: flex;
     justify-content: center;
   }
+
+  .main-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  table {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  table {
+    margin-top: 10px;
+  }
+
+  .operations {
+    margin: 5px;
+
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .operations {
+    margin: 5px;
+    table-layout: fixed;
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  table {
+    font-size: 0.8rem;
+    margin-top: 10px;
+  }
+
+  thead {
+    text-align: center;
+  }
+
+  .delete {
+    position: relative;
+    right: 3px;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
 }

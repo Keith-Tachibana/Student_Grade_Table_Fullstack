@@ -27,13 +27,13 @@ class Grade extends Component {
           <td>{grade}</td>
           <td className="text-right">
             <button
-              className="btn btn-primary btn-sm mr-2"
+              className="btn btn-primary btn-sm mr-2 operations"
               onClick={this.handleUpdate}
             >
             <i className="fas fa-edit"> Edit</i>
             </button>
             <button
-              className="btn btn-danger btn-sm ml-2"
+              className="btn btn-danger btn-sm ml-2 operations delete"
               onClick={this.handleDelete}
             >
             <i className="fas fa-trash-alt"> Delete</i>

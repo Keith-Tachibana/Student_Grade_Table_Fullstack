@@ -118,7 +118,7 @@ class App extends Component {
       <React.Fragment>
         <Header averageGrade={this.getAverageGrade()} />
         <main>
-          <div className="row">
+          <div className="row main-container">
             <GradeTable
               grades={this.state.grades}
               deleteGrade={this.deleteGrade}
