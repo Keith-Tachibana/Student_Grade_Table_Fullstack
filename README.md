@@ -19,7 +19,7 @@ A simple CRUD (Create, Read, Update, Delete), full-stack web application to crea
 - -Webpack 4.42.0
 - -Webpack CLI 3.3.11
 ## Live Demo
-Try the application live on [my porftolio website](https://www.keith-tachibana.com/portfolio/studentGradeTable/index.html)
+Try the application live on [my porftolio website](https://www.keith-tachibana.com/portfolio/studentGradeTable/server/public/index.html)
 ## Features
 - -Teachers can view a list of recorded grades
 - -Teachers can view the average grade for the class
