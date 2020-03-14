@@ -96,4 +96,4 @@ Try the application live on [my porftolio website](https://www.keith-tachibana.c
   ```shell
   sudo pm2 start index.js
   ```
-13. Open your default web browser and navigate to http://localhost:3000/ to see the result!
+13. Open your default web browser and navigate to http://localhost:3002/ to see the result!
