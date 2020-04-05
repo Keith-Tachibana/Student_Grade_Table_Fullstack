@@ -1,40 +1,39 @@
 # Student Grade Table
 A simple CRUD (Create, Read, Update, Delete), full-stack web application to create, read, update, and delete student grades
 ## Technologies Used
-- -@Babel/Core 7.8.7
-- -@Babel/Plugin-Transform-React-JSX 7.8.3
-- -Babel-Loader 8.0.6
-- -Bootstrap 4.4.1
-- -CORS 2.8.5
-- -Express 4.17.1
-- -FontAwesome 5.11.2
-- -Nginx 1.14.0
-- -Node 10.15.3
-- -NPM 6.4.1
-- -PG 7.18.2
-- -PM2 4.2.3
-- -PostgreSQL 10.10
-- -React 16.13.0
-- -ReactDOM 16.13.0
-- -Webpack 4.42.0
-- -Webpack CLI 3.3.11
+|                 Dependency          |    Version    |
+|-------------------------------------|--------------:|
+| @Babel/Core                         |     7.8.7     |
+| @Babel/Plugin-Transform-React-JSX   |     7.8.3     |
+| Babel-Loader                        |     8.0.6     |
+| Bootstrap                           |     4.4.1     |
+| CORS                                |     2.8.5     | 
+| Express                             |     4.17.1    |
+| FontAwesome                         |     5.11.2    |
+| PG                                  |     7.18.2    |
+| React                               |    16.13.0    |
+| React-DOM                           |    16.13.0    |
+| Webpack                             |     4.42.0    |
+| Webpack-CLI                         |     3.3.11    |
 ## Live Demo
 Try the application live on [my porftolio website](https://www.keith-tachibana.com/portfolio/studentGradeTable/server/public/index.html)
 ## Features
-- -Teachers can view a list of recorded grades
-- -Teachers can view the average grade for the class
-- -Teachers can add a grade to the table
-- -Teachers can delete a grade from the table
-- -Teachers can edit the student name, course name, or student grade from the table
+- _*_ Teachers can view a list of recorded grades
+- _*_ Teachers can view the average grade for the class
+- _*_ Teachers can add a grade to the table
+- _*_ Teachers can delete a grade from the table
+- _*_ Teachers can edit the student name, course name, or student grade from the table
 ## Preview
 ![Student Grade Table Preview](preview.gif "Student Grade Table Preview")
 ## Development
 #### System Requirements
-- -Nginx 1.10 or higher
-- -Node 10 or higher
-- -NPM 6 or higher
-- -PM2 4 or higher
-- -PostgreSQL 10 or higher
+|    Requirement    |       Version       |
+|-------------------|--------------------:|
+| Nginx             |   1.10 or higher    |
+| Node              |    10 or higher     |
+| NPM               |     6 or higher     |
+| PM2               |     4 or higher     |
+| PostgreSQL        |    10 or higher     |
 #### Getting Started
 1. Clone the repoistory
   ```shell
