@@ -34,6 +34,7 @@ Try the application live on [my porftolio website](https://www.keith-tachibana.c
 | NPM               |     6 or higher     |
 | PM2               |     4 or higher     |
 | PostgreSQL        |    10 or higher     |
+| Ubuntu Server     |     18.04 LTS       |
 #### Getting Started
 1. Clone the repoistory
   ```shell
@@ -68,17 +69,17 @@ Try the application live on [my porftolio website](https://www.keith-tachibana.c
   cd /etc/nginx/sites-available
   sudo nano default
   ```
-   - -In the "server" code block, add this underneath the first location definition:
-  ```shell
-  location /api {
-    proxy_pass http://127.0.0.1:3000;
-  }
-  ```
-   - -Save your changes (`Ctrl + O`) and exit (`Ctrl + X`)
-   - -Link your default site to the sites-enabled directory (if not already done):
-  ```shell
-  sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-  ```
+   - 8a. In the "server" code block, add this underneath the first location definition:
+        ```shell
+        location /api {
+          proxy_pass http://127.0.0.1:3000;
+        }
+        ```
+   - 8b. Save your changes (`Ctrl + O`) and exit (`Ctrl + X`)
+   - 8c. Link your default site to the sites-enabled directory (if not already done):
+        ```shell
+        sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+        ```
 9. Start nginx
   ```shell
   sudo service nginx start
@@ -93,6 +94,6 @@ Try the application live on [my porftolio website](https://www.keith-tachibana.c
   ```
 12. Start the Express.js server using the pm2 module
   ```shell
-  sudo pm2 start index.js
+  sudo pm2 --name "studentGradeTable" start index.js
   ```
 13. Open your default web browser and navigate to http://localhost:3000/ to see the result!
