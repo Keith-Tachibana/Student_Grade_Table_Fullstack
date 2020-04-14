@@ -92,7 +92,7 @@ Try the application live on [my porftolio website](https://www.keith-tachibana.c
   ```shell
   cd server/
   ```
-12. Start the Express.js server using the pm2 module
+12. Start the Express.js server using the PM2 module
   ```shell
   sudo pm2 --name "studentGradeTable" start index.js
   ```
