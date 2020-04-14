@@ -1,14 +1,9 @@
 body {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 @media only screen and (max-width: 1024px) and (orientation: landscape) {
-  input::placeholder {
-    font-size: 0.75rem;
-  }
-}
-
-@media only screen and (max-width: 1024px) and (orientation: portrait) {
   input::placeholder {
     font-size: 0.75rem;
   }
@@ -24,7 +19,7 @@ body {
     justify-content: center;
   }
 
-  .main-container {
+  .grade-container {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -35,13 +30,17 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  .main-container {
+  .grade-container {
     display: flex;
     flex-direction: column-reverse;
   }
 
   table {
     margin-top: 10px;
+  }
+
+  input::placeholder {
+    font-size: 1rem;
   }
 
   .operations {
@@ -59,9 +58,15 @@ body {
     font-size: 0.8rem;
   }
 
+  input::placeholder {
+    font-size: 1rem;
+  }
+
   table {
     font-size: 0.8rem;
     margin-top: 10px;
+    position: relative;
+    right: 25px;
   }
 
   thead {
@@ -73,9 +78,8 @@ body {
     right: 3px;
   }
 
-  .main-container {
+  .grade-container {
     display: flex;
     flex-direction: column-reverse;
   }
-
 }

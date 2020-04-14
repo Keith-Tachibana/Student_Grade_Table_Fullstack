@@ -141,7 +141,7 @@ app.put('/api/grades/:gradeId', (req, res, next) => {
         error: 'An unexpected error occurred.'
       });
     });
-})
+});
 
 app.delete('/api/grades/:gradeId', (req, res, next) => {
   const { gradeId } = req.params;

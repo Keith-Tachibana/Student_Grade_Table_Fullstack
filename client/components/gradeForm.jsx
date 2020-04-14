@@ -41,13 +41,18 @@ class GradeForm extends Component {
       addGrade(newEntry, true);
       this.clearFields();
     } else {
-      const newEntry = {
-        name: this.state.name,
-        course: this.state.course,
-        grade: parseInt(this.state.grade)
-      };
-      addGrade(newEntry, false);
-      this.clearFields();
+      const emptyStrRegExp = new RegExp('^(?!\\s*$).+');
+      if (!emptyStrRegExp.test(this.state.name) || !emptyStrRegExp.test(this.state.course)) {
+        alert('You must enter a valid name, course, AND grade before adding it to the table.');
+      } else {
+        const newEntry = {
+          name: this.state.name,
+          course: this.state.course,
+          grade: parseInt(this.state.grade)
+        };
+        addGrade(newEntry, false);
+        this.clearFields();
+      }
     }
   }
 

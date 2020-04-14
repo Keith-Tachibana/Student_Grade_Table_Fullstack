@@ -20,22 +20,20 @@ class GradeTable extends Component {
     return (
       <React.Fragment>
         <div className="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 pl-4">
-          <div className="table-responsive-sm table-responsive-md table-responsive-lg table-responsive-xl">
-            <table className="table table-dark table-striped table-borderless table-hover">
-              <caption className="pl-2">Student Grade Table by Keith Tachibana</caption>
-              <thead className="bg-success">
-                <tr>
-                  <th scope="col">Student Name</th>
-                  <th scope="col">Course</th>
-                  <th scope="col">Grade</th>
-                  <th scope="col" className="pr-4 text-right">Operations</th>
-                </tr>
-              </thead>
-              <tbody>
-                {this.props.grades.length === 0 ? <tr><td colSpan="4" className="text-center">{'No Grades Recorded'}</td></tr> : <>{studentGrades}</>}
-              </tbody>
-            </table>
-          </div>
+          <table className="table table-dark table-striped table-borderless table-hover">
+            <caption className="pl-2">Student Grade Table by Keith Tachibana</caption>
+            <thead className="bg-success">
+              <tr>
+                <th scope="col">Student Name</th>
+                <th scope="col">Course</th>
+                <th scope="col">Grade</th>
+                <th scope="col" className="pr-4 text-right">Operations</th>
+              </tr>
+            </thead>
+            <tbody>
+              {this.props.grades.length === 0 ? <tr><td colSpan="4" className="text-center">{'No Grades Recorded'}</td></tr> : <>{studentGrades}</>}
+            </tbody>
+          </table>
         </div>
       </React.Fragment>
     );
