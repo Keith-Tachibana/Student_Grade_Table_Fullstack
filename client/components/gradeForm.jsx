@@ -17,7 +17,7 @@ class GradeForm extends Component {
 
   componentDidUpdate(prevProps) {
     const { currentlyEditing } = this.props;
-    if (currentlyEditing !== prevProps.currentlyEditing) {
+    if (currentlyEditing.gradeId !== prevProps.currentlyEditing.gradeId) {
       this.setState({
         name: currentlyEditing.name,
         course: currentlyEditing.course,
@@ -38,8 +38,12 @@ class GradeForm extends Component {
         grade: parseInt(this.state.grade),
         gradeId: this.state.gradeId
       };
-      addGrade(newEntry, true);
-      this.clearFields();
+      this.setState({
+        update: false
+      }, () => {
+        addGrade(newEntry, true);
+        this.clearFields(); 
+      });
     } else {
       const emptyStrRegExp = new RegExp('^(?!\\s*$).+');
       if (!emptyStrRegExp.test(this.state.name) || !emptyStrRegExp.test(this.state.course)) {
@@ -50,8 +54,12 @@ class GradeForm extends Component {
           course: this.state.course,
           grade: parseInt(this.state.grade)
         };
-        addGrade(newEntry, false);
-        this.clearFields();
+        this.setState({
+          update: false
+        }, () => {
+          addGrade(newEntry, false);
+          this.clearFields(); 
+        });
       }
     }
   }
@@ -65,7 +73,9 @@ class GradeForm extends Component {
 
   handleReset(event) {
     event.preventDefault();
-    this.clearFields();
+    this.setState({
+      update: false
+    }, () => this.clearFields());
   }
 
   clearFields() {
@@ -75,7 +85,7 @@ class GradeForm extends Component {
       grade: '',
       update: false
     };
-    this.setState(clearFields);
+    this.setState(clearFields, this.props.clearUpdate);
   }
 
   renderHeading() {
@@ -117,7 +127,7 @@ class GradeForm extends Component {
                 className="form-control mr-4"
                 placeholder="Student Name"
                 size="25"
-                value={this.state.name}
+                value={this.state.name || ''}
                 required="required"
                 onChange={this.handleChange}
               />
@@ -133,7 +143,7 @@ class GradeForm extends Component {
                 className="form-control mr-4"
                 placeholder="Student Course"
                 size="25"
-                value={this.state.course}
+                value={this.state.course || ''}
                 required="required"
                 onChange={this.handleChange}
               />
@@ -149,7 +159,7 @@ class GradeForm extends Component {
                 className="form-control mr-4"
                 placeholder="Student Grade"
                 size="25"
-                value={this.state.grade}
+                value={this.state.grade || 0}
                 required="required"
                 onChange={this.handleChange}
                 min="0"

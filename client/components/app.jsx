@@ -9,11 +9,12 @@ class App extends Component {
     super(props);
     this.state = {
       grades: [],
-      currentlyEditing: null
+      currentlyEditing: {}
     };
     this.addGrade = this.addGrade.bind(this);
     this.deleteGrade = this.deleteGrade.bind(this);
     this.updateGrade = this.updateGrade.bind(this);
+    this.clearUpdate = this.clearUpdate.bind(this);
   }
 
   componentDidMount() {
@@ -113,6 +114,12 @@ class App extends Component {
     return displayAvg;
   }
 
+  clearUpdate() {
+    this.setState({
+      currentlyEditing: {}
+    });
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -128,6 +135,7 @@ class App extends Component {
               <GradeForm
                 addGrade={this.addGrade}
                 currentlyEditing={this.state.currentlyEditing}
+                clearUpdate={this.clearUpdate}
               />
             </div>
           </div>
