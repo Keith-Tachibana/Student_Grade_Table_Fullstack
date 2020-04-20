@@ -4,24 +4,13 @@ const { Pool } = require('pg');
 
 const app = express();
 
-const connectionString = 'postgres://dev:lfz@localhost/studentGradeTable';
+const connectionString = 'postgres://ubuntu:Kobe24lakers!@localhost/studentGradeTable';
 const db = new Pool({
   connectionString
 });
 
-const whitelist = ['http://localhost:3002', 'https://www.keith-tachibana.com'];
-const corsOptions = {
-  origin: function (origin, callback) {
-    if (whitelist.indexOf(origin) !== -1 || !origin) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  }
-};
-
 app.use(express.json());
-app.use(cors(corsOptions));
+app.use(cors());
 
 app.get('/api/grades', (req, res, next) => {
   const sql = `
