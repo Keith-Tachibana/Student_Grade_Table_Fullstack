@@ -9,7 +9,13 @@ class App extends Component {
     super(props);
     this.state = {
       grades: [],
-      currentlyEditing: {}
+      currentlyEditing: {
+        name: '',
+        course: '',
+        grade: '',
+        gradeId: null,
+        update: false
+      }
     };
     this.addGrade = this.addGrade.bind(this);
     this.deleteGrade = this.deleteGrade.bind(this);
@@ -116,7 +122,13 @@ class App extends Component {
 
   clearUpdate() {
     this.setState({
-      currentlyEditing: {}
+      currentlyEditing: {
+        name: '',
+        course: '',
+        grade: '',
+        gradeId: null,
+        update: false
+      }
     });
   }
 

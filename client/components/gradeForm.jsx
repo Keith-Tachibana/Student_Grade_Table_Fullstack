@@ -23,7 +23,7 @@ class GradeForm extends Component {
         course: currentlyEditing.course,
         grade: currentlyEditing.grade,
         gradeId: currentlyEditing.gradeId,
-        update: true
+        update: !!currentlyEditing.gradeId
       });
     }
   }
@@ -73,9 +73,7 @@ class GradeForm extends Component {
 
   handleReset(event) {
     event.preventDefault();
-    this.setState({
-      update: false
-    }, () => this.clearFields());
+    this.clearFields();
   }
 
   clearFields() {
