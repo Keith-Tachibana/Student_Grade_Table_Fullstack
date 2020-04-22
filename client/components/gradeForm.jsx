@@ -42,7 +42,7 @@ class GradeForm extends Component {
         update: false
       }, () => {
         addGrade(newEntry, true);
-        this.clearFields(); 
+        this.clearFields();
       });
     } else {
       const emptyStrRegExp = new RegExp('^(?!\\s*$).+');
@@ -58,7 +58,7 @@ class GradeForm extends Component {
           update: false
         }, () => {
           addGrade(newEntry, false);
-          this.clearFields(); 
+          this.clearFields();
         });
       }
     }
@@ -159,7 +159,7 @@ class GradeForm extends Component {
                 className="form-control mr-4"
                 placeholder="Student Grade"
                 size="25"
-                value={this.state.grade || 0}
+                value={this.state.grade || ''}
                 required="required"
                 onChange={this.handleChange}
                 min="0"
